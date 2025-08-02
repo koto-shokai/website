@@ -249,3 +249,28 @@ a {
     min-width: 5rem; /* 最小幅 */
   }
 }
+
+<!-- -->
+/* テーブル下のリンク用：表示・整列・余白 */
+.external-link-box {
+  margin: 1.5rem 0 2rem;   /* 上下のスペース */
+  text-align: center;
+}
+
+/* ボタン風リンクの見た目調整（任意・目立たせたい場合） */
+.external-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #f5f5f5, #f8f8f8);
+  color: #002244;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.external-link:hover {
+  background: linear-gradient(135deg, #f8f8f8, #ffffff);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
