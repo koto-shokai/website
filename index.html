@@ -15,6 +15,7 @@
   <meta property="og:url" content="https://koto-shokai.github.io/website/">
   
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style_image.css" />
   <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -23,7 +24,7 @@
       <h1 class="logo-text">株式会社港島商会</h1>
       <nav>
         <ul class="nav">
-          <li><a href="#about">事業内容</a></li>
+          <li><a href="#about">事業概要</a></li>
           <li><a href="#company">会社概要</a></li>
         </ul>
       </nav>
@@ -37,25 +38,38 @@
     </div>
   </section>
 
-  <!-- 波を入れたい -->
-  <div class="wave-divider double-wave">
-    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-      <path d="M0,0 C480,100 960,0 1440,100 L1440,150 L0,150 Z" fill="#f5f5f5"></path>
+  <!-- 波を入れたいA -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none" style="display: block; width: 100%; height: auto;">
+      <path d="M0, 0 C480,100 960, 0 1440,100 L1440,150 L0,150 Z" fill="#f5f5f5"></path>
       <path d="M0,30 C480,130 960,30 1440,130 L1440,150 L0,150 Z" fill="#d0e7f7" opacity="0.7"></path>
+      <path d="M0,90 C480,160 960,50 1440,130 L1440,150 L0,150 Z" fill="#f5f5f5"></path>
     </svg>
   </div>
 
   <section id="about" class="section alt">
     <div class="container">
-      <h2>事業内容</h2>
+      <h2 id="node_busOverview">事業概要</h2>
       <p>港湾物流を支える業務の支援を行っております。</p>
-      <ul data-title="作業業務受託・労働者派遣業務" class="description">
-          <li>・コンテナターミナル内での輸送用コンテナの点検作業、倉庫内作業などの現場業務。</li>
-          <li>・輸出入の貨物に関わる事務作業。</li>
+      <ul data-title="作業業務受託・労働者派遣業務">
+        <li>・コンテナターミナル内での輸送用コンテナの点検作業、倉庫内作業などの現場業務。</li>
+        <li>・輸出入の貨物に関わる事務作業。</li>
+        <!--<li><a class="internal-link" href="./services.html">➤ 作業内容(一例)を見る</a></li>-->
       </ul>
-      <img src="assets/images/ContainerTerminal.JPG" alt="コンテナターミナル" class="responsive-image">
+      <div class="img-frame">
+        <div class="img-01"></div>
+      </div>
     </div>
   </section>
+
+  <!-- 波を入れたいB -->
+  <div class="wave-divider" style="transform: scaleY(-1); line-height: 0;">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none" style="display: block; width: 100%; height: auto;">
+      <path d="M0, 0 C480,100 960, 0 1440,100 L1440,150 L0,150 Z" fill="#f5f5f5"></path>
+      <path d="M0,70 C480,130 960,30 1440,140 L1440,150 L0,150 Z" fill="#d0e7f7"></path>
+      <path d="M0,75 C480,160 960,70 1440,110 L1440,150 L0,150 Z" fill="#f5f5f5"></path>
+    </svg>
+  </div>
 
   <section id="company" class="section">
     <div class="container">
@@ -67,7 +81,7 @@
         </tr>
         <tr>
           <th>神戸事業所</th>
-          <td>&#12306;650-0024 兵庫県神戸市中央区海岸通2丁目3‐11 昭和ビル102</td>
+          <td>&#12306;650-0024 兵庫県神戸市中央区海岸通2丁目3‐11 昭和ビル208</td>
         </tr>
         <tr>
           <th>代表取締役</th>
@@ -76,7 +90,7 @@
         <tr>
       </table>
       <div class="external-link-box">
-        <a class="external-link" href="https://jinzai.hellowork.mhlw.go.jp/JinzaiWeb/GICB102010.do?screenId=GICB102010&action=detail&detkey_Detail=%E6%B4%BE28-300974%2C1+++++" target="_blank" rel="noopener noreferrer">
+        <a class="external-link" href="https://jinzai.hellowork.mhlw.go.jp/JinzaiWeb/GICB102010.do?screenId=GICB102010&action=detail&detkey_Detail=%E6%B4%BE28-300974%2C1+++++" target="_blank">
           厚生労働省職業安定局 人材サービス総合サイト
         </a>
       </div>
@@ -96,7 +110,6 @@
           <td>株式会社港島商会へ社名変更</td>
         </tr>
       </table>
-
     </div>
   </section>
 

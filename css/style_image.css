@@ -1,0 +1,84 @@
+/* 画像表示設定 */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-frame{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* レスポンシブ対応 
+ * スマホ      @media (max-width: 767px)
+ * タブレット   @media (min-width: 768px) and (max-width: 1024px)
+ * デスクトップ @media (min-width: 1025px)
+ */
+@media screen and (max-width: 768px) {
+  .img-frame{
+    width: 100%;
+    height: 200px;
+  }
+}
+.img-01/*, .img-02, .img-03*/{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+.img-01{
+   background-image: url('../assets/images/ContainerTerminal.JPG');
+/*   animation: slide-animation-01 24s infinite;*/
+}
+/*
+.img-02{
+   background-image: url('../assets/images/ContainerTerminal2.JPG');
+   animation: slide-animation-02 24s infinite;
+}
+*/
+/*
+.img-03{
+   background-image: url('画像の場所');
+   animation: slide-animation-03 24s infinite;
+}
+*/
+
+@keyframes slide-animation-01 {
+/*   0% { opacity: 1; transform: scale(1.0); }
+  30% { opacity: 1; }
+  40% { opacity: 0; transform: scale(1.15); }
+  90% { opacity: 0 }
+ 100% { opacity: 1; transform: scale(1.0); }*/
+  0%   { opacity: 1; transform: scale(1.0); }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; transform: scale(1.10); }
+  70%  { opacity: 0; }
+  80%  { opacity: 1; transform: scale(1.0); }
+  100% { opacity: 1; }
+}
+@keyframes slide-animation-02 {
+  0%   { opacity: 0; }
+  30%  { opacity: 0; transform: scale(1.1); }
+  40%  { opacity: 1; }
+  70%  { opacity: 1; }
+  80%  { opacity: 0; transform: scale(1.0); }
+  100% { opacity: 0; }
+}
+/*
+@keyframes slide-animation-03 {
+   0% {opacity: 0;}
+  60% {opacity: 0;  transform: scale(1.0);}
+  70% {opacity: 1;}
+  90% {opacity: 1;}
+ 100% {opacity: 0; transform: scale(1.1);}
+}
+*/
+
